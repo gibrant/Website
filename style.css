@@ -1,0 +1,286 @@
+/* Pen Style */
+:root{
+  --speed: 500ms;
+  --speed1: 1000ms;
+  --bg-color1: rgba(49, 51, 62, 0.9);
+  --bg-color2: rgba(44, 44, 44, 1);
+}
+
+h1{
+  margin: 20px;
+  top: 40vh;
+  position: relative;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+p{
+  margin: auto;
+  top: 40vh;
+  position: relative;
+  width: 200px;
+}
+
+img{
+  width: 100px;
+  margin: auto;
+  height: auto;
+  top: 40vh;
+  position: relative;
+}
+
+#qodr-icon{
+  padding: 10px;
+  text-align: left;
+  top: 20vh;
+  position: relative;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: var(--speed) all ease;
+}
+
+#qodr-icon:hover{
+  opacity: 0.5;
+}
+
+#qodr-icon span{
+  font-size: 30px;
+  color: lightgreen;
+}
+
+#maps h1{
+  display: none;
+}
+
+#maps span{
+  display: none;
+}
+
+.fa-bars{
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1000;
+  cursor: pointer;
+  transition: var(--speed) all ease;
+}
+
+.fa-bars{
+  opacity: 0.5;
+}
+
+.fa-times{
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  text-align: right;
+  position: relative;
+  display: inline;
+  width: 100%;
+  float: left;
+  cursor: pointer;
+  transition: var(--speed) all ease;
+}
+
+.fa-times:hover{
+  opacity: 0.5;
+}
+
+.fa-home, .fa-phone, .fa-user{
+  font-size: 24px;
+  color: white;
+  text-align: left;
+  position: relative;
+  padding-right: 12px;
+  width: 20px;
+  display: inline-block;
+}
+
+/* box-design */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Righteous', cursive;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #2e2e2e;
+  display: flex;
+}
+
+#header{
+  width: 100%;
+  height: 20px;
+  position: fixed;
+  text-align: left;
+  padding: 10px;
+  /* background-color: black; */
+  z-index: 1000;
+}
+
+#header a{
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+  transition: var(--speed1);
+}
+
+#header a:hover{
+  color: #ccc;
+}
+
+.one, .two, .three, .four, .five{
+  flex: 1;
+  transition: var(--speed) ease-in-out;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.one{
+  /* background-color: blue; */
+  background: url(img/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.one:hover{
+  flex: 1.5;
+  transform: scale(1.1);
+}
+
+.two{
+  /* background-color: dodgerblue; */
+  background: url(img/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.two:hover{
+  flex: 1.5;
+  transform: scale(1.1);
+}
+
+.three{
+  /* background-color: lightgreen; */
+  background: url(img/bg3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.three:hover{
+  flex: 1.5;
+  transform: scale(1.1);
+}
+
+.four{
+  /* background-color: cyan; */
+  background: url(img/bg4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.four:hover{
+  flex: 1.5;
+  transform: scale(1.1);
+}
+
+.five{
+  /* background-color: orange; */
+  background: url(img/bg5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.five:hover{
+  flex: 1.5;
+  transform: scale(1.1);
+}
+
+#footer .fa-map{
+  padding: 10px;
+  color: #2e2e2e;
+  border-radius: 100%;
+}
+
+#maps{
+  /* background-color: dodgerblue; */
+  width: 100%;
+  height: auto;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  margin: 0;
+}
+
+#maps #map-icon .fa-map{
+  padding: 15px;
+  background-color: whitesmoke;
+  color: #292929;
+  border-radius: 100%;
+  font-size: 20px;
+  transition: var(--speed1);
+  z-index: 1000;
+}
+
+#maps #map-icon .fa-map:hover{
+  background-color: #ccc;
+  color: white;
+}
+
+.sidebar_menu{
+  position: fixed;
+  padding: 20px;
+  color: white;
+  width: 250px;
+  height: 100%;
+  left: 0;
+  background-color: #2c2c2c;
+  transition: var(--speed) all ease-in-out;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.sidebar_menu ul{
+  list-style: none;
+  position: relative;
+  top: 30vh;
+  left: -5px;
+
+}
+
+.sidebar_menu li{
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 5px 0;
+  transition: var(--speed) all ease;
+}
+
+.sidebar_menu li:hover{
+  opacity: 0.5;
+}
+
+.sidebar_menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.hide_menu{
+  margin-left: -250px;
+}
+
+.opacity_one{
+  opacity: 1;
+  transition: var(--speed);
+}
